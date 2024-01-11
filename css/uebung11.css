@@ -35,3 +35,13 @@ body {
     margin: 0;
 }
 
+/* ein Element aus Kanban Karten beim Ziehen Verstecken  */
+.hide {
+    display: none;
+}
+
+/* Highlight-Stil für Drop-Ziele */
+.drag-over {
+    border: 2px dashed #666; /* Beispiel für ein Dashed-Border-Highlight */
+    background-color: #f7f7f7; /* Leichte Hintergrundfarbenänderung zum Hervorheben */
+}
