@@ -18,10 +18,3 @@ function getUserMedia(options, successCallback, failureCallback) {
   }
   throw new Error('User Media API not supported.')
 }
-
-
-}
-
-
-
-
