@@ -9,7 +9,7 @@ self.addEventListener("install", installEvent => {
 });
 
 self.addEventListener('activate', event => {
-  console.log('Service Worker installing');
+  console.log('Service Worker activating');
 });
 
 self.addEventListener("fetch", fetchEvent => {
