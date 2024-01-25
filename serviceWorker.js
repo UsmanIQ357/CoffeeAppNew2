@@ -5,7 +5,7 @@ const assets = [
 ];
 
 self.addEventListener("install", installEvent => {
-   console.log('Service Worker installing');
+   console.log('Service Worker installing ');
 });
 
 self.addEventListener('activate', event => {
