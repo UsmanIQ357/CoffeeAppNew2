@@ -8,7 +8,7 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "path/to/icon-192x192.png",
+      "src": "astronauten.png",
       "type": "image/png",
       "sizes": "192x192"
     } 
