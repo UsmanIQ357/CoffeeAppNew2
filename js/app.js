@@ -6,17 +6,8 @@ function getUserMedia(options, successCallback, failureCallback) {
       .then(successCallback)
       .catch(failureCallback);
   }
-  throw new Error('User Media API not supported.');
+  throw new Error('User Media API not supported.')
 }
-
-
-
-
-
-
-
-
-// offline storage
 
 
 }
