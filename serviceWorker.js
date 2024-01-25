@@ -1,25 +1,14 @@
-const staticDevCoffee = "dev-coffee-site-v1";
+const myPWA = "my-pwa-aufgaben";
 const assets = [
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/js/app.js",
-  "/js/battery.js",
-  "/battery.html",
-  "/images/coffee1.jpg",
-  "/images/coffee2.jpg",
-  "/images/coffee3.jpg",
-  "/images/coffee4.jpg",
-  "/images/coffee5.jpg",
-  "/images/coffee6.jpg",
-  "/images/coffee7.jpg",
-  "/images/coffee8.jpg",
-  "/images/coffee9.jpg"
+  "index.html",
+  "css/style.css"
 ];
 
 self.addEventListener("install", installEvent => {
+   console.log('Service Worker installing.');
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(myPWA).then(cache => {
+      console.log('Opened cache');
       cache.addAll(assets);
     })
   );
