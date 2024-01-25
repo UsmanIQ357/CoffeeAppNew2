@@ -6,12 +6,6 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
    console.log('Service Worker installing.');
-  installEvent.waitUntil(
-    caches.open(myPWA).then(cache => {
-      console.log('Opened cache');
-      cache.addAll(assets);
-    })
-  );
 });
 
 self.addEventListener('activate', event => {
